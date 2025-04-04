@@ -17,4 +17,12 @@ class User {
         username: json['username'] as String,
         role :json['role'] as String?,
       );
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'username': username,
+      'role': role,
+    };
+  }
 }
